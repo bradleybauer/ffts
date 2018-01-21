@@ -26,3 +26,5 @@ java/android/gen/*
 java/android/obj/*
 java/android/bin/*
 
+build/*
+!build/ffts_static.vcxproj
