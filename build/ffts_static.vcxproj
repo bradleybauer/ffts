@@ -76,7 +76,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)libs\ffts\include;$(SolutionDir)libs\ffts\src;$(SolutionDir)libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsC</CompileAs>
