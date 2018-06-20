@@ -212,8 +212,6 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include\ffts.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_attributes.h" />
     <ClCompile Include="..\src\codegen.c" />
     <ClCompile Include="..\src\ffts.c" />
     <ClCompile Include="..\src\ffts_chirp_z.c" />
@@ -223,20 +221,6 @@
     <ClCompile Include="..\src\ffts_static.c" />
     <ClCompile Include="..\src\ffts_transpose.c" />
     <ClCompile Include="..\src\ffts_trig.c" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_chirp_z.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_internal.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_nd.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_real.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_real_nd.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_transpose.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_trig.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\ffts_static.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\macros.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\patterns.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\types.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\macros-sse.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\codegen_sse.h" />
-    <ClInclude Include="C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src\codegen.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
