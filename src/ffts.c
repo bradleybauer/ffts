@@ -107,27 +107,6 @@ ffts_deny_execute(void *start, size_t len)
     return result;
 }
 
-static FFTS_INLINE int
-ffts_flush_instruction_cache(void *start, size_t length)
-{
-#ifdef _WIN32
-    return !FlushInstructionCache(GetCurrentProcess(), start, length);
-#else
-#ifdef __APPLE__
-    sys_icache_invalidate(start, length);
-#elif __ANDROID__
-    cacheflush((long) start, (long) start + length, 0);
-#elif __linux__
-#if GCC_VERSION_AT_LEAST(4,3)
-    __builtin___clear_cache(start, (char*) start + length);
-#elif __GNUC__
-    __clear_cache((long) start, (long) start + length);
-#endif
-#endif
-    return 0;
-#endif
-}
-
 static FFTS_INLINE void*
 ffts_vmem_alloc(size_t length)
 {
@@ -612,50 +591,11 @@ ffts_init_1d(size_t N, int sign)
         p->i1 /= 2;
 #endif
 
-#ifdef DYNAMIC_DISABLED
         if (sign < 0) {
             p->transform = ffts_static_transform_f_32f;
         } else {
             p->transform = ffts_static_transform_i_32f;
         }
-#else
-        /* determinate transform size */
-#if defined(__arm__)
-        if (N < 8192) {
-            p->transform_size = 8192;
-        } else {
-            p->transform_size = N;
-        }
-#else
-        if (N < 2048) {
-            p->transform_size = 16384;
-        } else {
-            p->transform_size = 16384 + 2*N/8 * ffts_ctzl(N);
-        }
-#endif
-
-        /* allocate code/function buffer */
-        p->transform_base = ffts_vmem_alloc(p->transform_size);
-        if (!p->transform_base) {
-            goto cleanup;
-        }
-
-        /* generate code */
-        p->transform = ffts_generate_func_code(p, N, leaf_N, sign);
-        if (!p->transform) {
-            goto cleanup;
-        }
-
-        /* enable execution with read access for the block */
-        if (ffts_allow_execute(p->transform_base, p->transform_size)) {
-            goto cleanup;
-        }
-
-        /* flush from the instruction cache */
-        if (ffts_flush_instruction_cache(p->transform_base, p->transform_size)) {
-            goto cleanup;
-        }
-#endif
     } else {
         switch (N) {
         case 2:

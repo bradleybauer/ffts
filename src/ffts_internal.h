@@ -215,29 +215,8 @@ struct _ffts_plan_t {
 };
 
 static FFTS_INLINE void*
-ffts_aligned_malloc(size_t size)
-{
-    void *p = NULL;
-
-    /* various ways to allocate aligned memory in order of preferance */
-#if defined(__ICC) || defined(__INTEL_COMPILER) || defined(HAVE__MM_MALLOC)
-    p = (void*) _mm_malloc(size, 32);
-#elif defined(HAVE_POSIX_MEMALIGN)
-    if (posix_memalign(&p, 32, size))
-        p = NULL;
-#elif defined(HAVE_MEMALIGN)
-    p = memalign(32, size);
-#elif defined(__ALTIVEC__)
-    p = vec_malloc(size);
-#elif defined(_MSC_VER) || defined(WIN32)
-    p = _aligned_malloc(size, 32);
-#elif defined(HAVE_VALLOC)
-    p = valloc(size);
-#else
-    p = malloc(size);
-#endif
-
-    return p;
+ffts_aligned_malloc(size_t size) {
+    return malloc(size);
 }
 
 static FFTS_INLINE
