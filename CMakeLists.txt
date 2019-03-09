@@ -571,5 +571,7 @@ install( FILES
   DESTINATION ${INCLUDE_INSTALL_DIR} )
 
 
-target_compile_options(ffts_static PUBLIC "$<$<CONFIG:RELEASE>:-Ofast>")
-target_compile_options(ffts_static PUBLIC "$<$<CONFIG:DEBUG>:-Ofast>")
+if (RELEASE_BUILD)
+  target_compile_options(ffts_static PUBLIC "$<$<CONFIG:RELEASE>:-Ofast>")
+  target_compile_options(ffts_static PUBLIC "$<$<CONFIG:DEBUG>:-Ofast>")
+endif()
