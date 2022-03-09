@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
@@ -19,8 +22,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{F7863593-CFF2-3268-A73E-63239BFAECDC}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{1B12E311-C018-307A-BBBE-2AF6254FED4C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
     <ProjectName>ffts_static</ProjectName>
@@ -30,23 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -57,29 +59,28 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ffts_static.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ffts_staticd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ffts_static.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ffts_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ffts_static.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ffts_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ffts_static.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ffts_static</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)libs\ffts\include;$(SolutionDir)libs\ffts\src;$(SolutionDir)libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <CompileAs>CompileAsC</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
       <ExceptionHandling>
@@ -88,16 +89,17 @@
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -110,30 +112,28 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)libs\ffts\include;$(SolutionDir)libs\ffts\src;$(SolutionDir)libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>Release/</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
       <ExceptionHandling>
       </ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <Optimization>Full</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <AdditionalUsingDirectories>
-      </AdditionalUsingDirectories>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -146,9 +146,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
       <ExceptionHandling>
       </ExceptionHandling>
@@ -156,18 +155,19 @@
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,9 +180,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
-      <CompileAs>CompileAsC</CompileAs>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4127</DisableSpecificWarnings>
       <ExceptionHandling>
@@ -191,16 +190,17 @@
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level4</WarningLevel>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;DYNAMIC_DISABLED;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\include;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\src;C:\Users\gazin\Programming\internal\git\music_visualizer\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Bradley\code\music_visualizer\libs\ffts\include;C:\Users\Bradley\code\music_visualizer\libs\ffts\src;C:\Users\Bradley\code\music_visualizer\libs\ffts\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -212,15 +212,96 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\codegen.c" />
-    <ClCompile Include="..\src\ffts.c" />
-    <ClCompile Include="..\src\ffts_chirp_z.c" />
-    <ClCompile Include="..\src\ffts_nd.c" />
-    <ClCompile Include="..\src\ffts_real.c" />
-    <ClCompile Include="..\src\ffts_real_nd.c" />
-    <ClCompile Include="..\src\ffts_static.c" />
-    <ClCompile Include="..\src\ffts_transpose.c" />
-    <ClCompile Include="..\src\ffts_trig.c" />
+    <CustomBuild Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/Bradley/code/music_visualizer/libs/ffts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\cmake-3.22.2\bin\cmake.exe -SC:/Users/Bradley/code/music_visualizer/libs/ffts -BC:/Users/Bradley/code/music_visualizer/libs/ffts/build --check-stamp-file C:/Users/Bradley/code/music_visualizer/libs/ffts/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeASMCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeSystem.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindOpenMP.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/Bradley/code/music_visualizer/libs/ffts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\cmake-3.22.2\bin\cmake.exe -SC:/Users/Bradley/code/music_visualizer/libs/ffts -BC:/Users/Bradley/code/music_visualizer/libs/ffts/build --check-stamp-file C:/Users/Bradley/code/music_visualizer/libs/ffts/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeASMCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeSystem.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindOpenMP.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/Bradley/code/music_visualizer/libs/ffts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\cmake-3.22.2\bin\cmake.exe -SC:/Users/Bradley/code/music_visualizer/libs/ffts -BC:/Users/Bradley/code/music_visualizer/libs/ffts/build --check-stamp-file C:/Users/Bradley/code/music_visualizer/libs/ffts/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeASMCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeSystem.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindOpenMP.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/Bradley/code/music_visualizer/libs/ffts/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\cmake-3.22.2\bin\cmake.exe -SC:/Users/Bradley/code/music_visualizer/libs/ffts -BC:/Users/Bradley/code/music_visualizer/libs/ffts/build --check-stamp-file C:/Users/Bradley/code/music_visualizer/libs/ffts/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeASMCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeRCCompiler.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\3.22.2\CMakeSystem.cmake;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPCheckVersion.c;C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\FindOpenMP\OpenMPTryFlag.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeASMInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCCompilerABI.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCommonLanguageInclude.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeCompilerIdDetection.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeConfigurableFile.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompileFeatures.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerABI.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineCompilerId.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeDetermineSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeFindBinUtils.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeGenericSystem.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeInitializeConfigs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeLanguageInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseImplicitLinkInfo.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeParseLibraryArchitecture.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCCompiler.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeRCInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystem.cmake.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInformation.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeSystemSpecificInitialize.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestASMCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestCompilerCommon.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CMakeTestRCCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckCSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.c;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckFunctionExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.c.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckIncludeFile.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CheckSymbolExists.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-ASM.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TI-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\CompilerId\VS-10.vcxproj.in;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindOpenMP.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageHandleStandardArgs.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\FindPackageMessage.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceCompiles.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\CheckSourceRuns.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Internal\FeatureTesting.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC-C.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows-MSVC.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\Windows.cmake;C:\cmake-3.22.2\share\cmake-3.22\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\Bradley\code\music_visualizer\libs\ffts\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\include\ffts.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_attributes.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts.c" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_chirp_z.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_chirp_z.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_cpu.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_cpu.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_internal.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_nd.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_nd.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_real.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_real.c" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_real_nd.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_real_nd.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_transpose.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_transpose.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_trig.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_trig.h" />
+    <ClCompile Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_static.c" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\ffts_static.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\macros.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\patterns.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\types.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\macros-avx.h" />
+    <ClInclude Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\src\macros-sse.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\Bradley\code\music_visualizer\libs\ffts\build\ZERO_CHECK.vcxproj">
+      <Project>{A4D1671F-04F8-311F-AC45-D17B8E5CD22B}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
