@@ -127,6 +127,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;FFTS_BUILD;HAVE_INTTYPES_H;HAVE_MALLOC_H;HAVE_STDINT_H;HAVE_STDLIB_H;HAVE_STRING_H;HAVE_DECL__MM_MALLOC;HAVE_SSE;HAVE_SSE2;HAVE_PMMINTRIN_H;HAVE_SSE3;_USE_MATH_DEFINES;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
